@@ -11,11 +11,12 @@ document.addEventListener("DOMContentLoaded", (e) => {
 
 function handleToDo(toDo) {
    let li = document.createElement('li');
+   let priority = document.getElementById('priority')
    li.textContent = `${toDo}  `
    li.append(setPriority(), createDelete())
    document.querySelector('#tasks').appendChild(li)
    form.reset()
-   
+   priority.value = " "
    
    
   }
